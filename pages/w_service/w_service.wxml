@@ -1,0 +1,73 @@
+<!--pages/w_service/w_service.wxml-->
+<!--pages/fenxiang/fenxiang.wxml-->
+<!-- 主题头像设置-->
+
+  <view class="user-top" >
+        <image class="avatar" src="{{cur_avatar}}"></image>
+        <text class="uname">{{cur_user}}</text>
+        <text class="info">{{cur_content}} </text>
+    </view>
+
+  <!-- end -->
+  <!--<scroll-view class="container-body" scroll-y="true" style="height: 600px;" bindscrolltoupper="refresh" lower-threshold="40"     bindscrolltolower="loadmore" bindscroll="scrollHandle" > -->
+	<view class="scroll_view" >
+     <view wx:for="{{servicelist}}" wx:key="keys" > 
+     <view class="weui-cell weui-cell_access" hover-class="weui-cell_active"></view>
+     
+      <view class="b_item" >        
+        <view class="b_video" >
+          <view wx:if="{{item.isVideo}}" class="video_box">
+               <video class="video_s" id="{{index}}" src="{{item.imgurl}}" controls></video>  
+          </view>
+         
+          <image wx:if="{{item.isPhoto == '1'}}" class ="v_img" src="{{item.imgurl}}"  bindtap="previewImg" data-id="{{index}}" mode="scaleToFill"></image>
+        
+          <view wx:if="{{item.isPhoto == '2'}}" class="swiper" >
+      <swiper indicator-dots="true"  autoplay="false" interval="3000" id = "{{index}}" catchtap="onItemClick" >
+          <block wx:for-items="{{item.imgurl}}" wx:key="item.id">
+              <swiper-item>
+                <block wx:if="{{item}}">
+                  <image  src="{{item.url}}" id= "{{index}}" bindtap="preMultiViewImg"  mode="scaleToFill"/>
+                </block>
+              </swiper-item>
+          </block>
+        </swiper>
+      </view>
+
+      </view>
+
+         <view class="info">
+           	<text  data-id="{{index}}" ></text>
+          {{item.title}}
+          </view>
+           <!-- emoji 顶部配置-->
+          <view class="c-top">
+          <text class="title"  id="{{index}}" >{{item.author}} {{item.createdAt}}</text>
+          </view>
+         <!-- end-->
+          <!-- emoji 底部配置-->
+           <view class="c-bottom">
+                    <view class="user">
+                        <image class="u-img" src="../../images/type_add_71.png"  data-id="{{index}}" bindtap="commentItem" ></image>
+                        <view class="u-box">
+                            <text class="u-name" data-id="{{index}}"  bindtap="commentItem" >评论: ({{item.comment_num}})</text>
+                            <!--<text class="u-time">{{v.time}}</text>-->
+                        </view>
+                    </view>
+                    <view class="right">
+                        <image class="u-img" src="../../images/delete.png"  id="{{index}}" bindtap="deleteProc"></image>
+                    </view>
+            </view>
+            <!-- end emoji-->
+
+        </view>
+        
+       </view>
+        
+    </view>
+	<!--</scroll-view>-->
+
+
+
+ 
+	

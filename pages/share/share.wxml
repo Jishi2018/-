@@ -1,0 +1,23 @@
+<view class="container">
+	<!--<view class="container-body container-gray" style="display:{{showfootertab==0?'block':'none'}}"> -->
+		<view class="group">
+			<view class="group-header">简单描述</view>
+			<view class="group-body">
+				<textarea bindblur="bindTextAreaBlur" placeholder="请简要对图片描述，可输入150字" value="{{response_info}}" maxlength="1000"></textarea>
+			</view>
+			<view class="group-header">上传图片</view>
+			<view class="group-body">
+				<view class="img-upload">
+					<view class="img-add" bindtap="chooseImage"></view>
+					<view class="img-item" bindlongpress="editImage" wx:for="{{uploadimgs}}" wx:key="{{index}}">
+						<icon type="clear" size="20" color="red" style="display:{{editable?'block':'none'}}" bindtap="deleteImg" data-index="{{index}}"/>
+						<image src="{{item}}" mode="aspectFill"></image>
+					</view>
+				</view>
+			</view>
+		  <view class="btn-submit">
+			<button class="btn-block btn-orange" bindtap="respondSubmit">确认提交</button>
+		  </view>
+    </view>
+	<!--</view> -->
+</view>

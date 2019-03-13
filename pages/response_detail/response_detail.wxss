@@ -1,0 +1,35 @@
+/*image.wxss*/
+page {
+  width: 100%;
+  height: 100%;
+  background-color: #e3edcd;//Haiwei: 这个背景颜色可以
+}
+.bigImage{
+    width: 95%;
+    height: 1000rpx;
+    margin: auto;
+    overflow: auto;   
+    position: absolute;  
+    top: 0; left: 0; bottom: 0; right: 0;  
+}
+
+.topic-content {
+  flex-direction: row;
+  Text-indent: 30px;
+  display: flex;
+  margin-bottom: 2rpx;
+  color: #777;
+}
+
+.bright789_view_hide{  
+ display: none;  
+}  
+.bright789_view_show{  
+ display: block;  
+}  
+
+.service-img{
+  //width: 100%;
+  //height: 1100rpx; //Haiwei :调整结果，不同机器不一样
+
+}

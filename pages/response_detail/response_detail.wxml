@@ -1,0 +1,18 @@
+<!--image.wxml-->
+<!-- 缩放功能可以看以前的处理版本，这里主要用于识别二维码-->
+<view >
+    <loading hidden="{{hidden}}" >
+     {{loadingText}}
+    </loading>
+    <toast hidden="{{toastHidden}}" bindchange="onToastChanged">
+        {{toastText}}
+    </toast>
+<view class="{{showView?'bright789_view_show':'bright789_view_hide'}}">  
+  <canvas class="cropper" disable-scroll="true" style="width:{{width}}rpx;height:{{height}}rpx;" canvas-id="cropper">
+  </canvas>
+</view>
+</view>
+  <view class="btn-submit">
+
+			<!-- <button class="btn-block btn-orange" bindtap="onSaveClick">保存图片</button> -->
+	</view>
