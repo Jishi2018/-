@@ -1,0 +1,67 @@
+{
+  "pages":[
+    "pages/kankan/kankan",
+    "pages/kankan_commit/kankan_commit",
+    "pages/kankan_ack/kankan_ack",
+    "pages/fenxiang/fenxiang",
+    "pages/share/share",
+    "pages/caicai/caicai",
+    "pages/response/response",
+    "pages/response_detail/response_detail",
+    "pages/user/user",
+    "pages/myRelease/myRelease",
+    "pages/myWork/myWork",
+    "pages/myAgree/myAgree",
+    "pages/aboutUS/aboutUS",
+    "pages/appSYS/appSYS",
+    "pages/uploadview/uploadview",
+    "pages/showvideo/showvideo",
+    "pages/comment/comment",
+    "pages/k_service_img/k_service_img",
+    "pages/k_service_video/k_service_video",
+    "pages/w_service/w_service",
+    "pages/logs/logs"
+  ],
+  "window":{
+   "backgroundTextStyle": "light",
+   "navigationBarBackgroundColor": "#37383c",
+   "navigationBarTitleText": "极视",
+   "navigationBarTextStyle": "white"
+  },
+ 
+    "tabBar": {
+    "color": "#333",
+    "selectedColor": "#FF0000",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/kankan/kankan",
+        "text": "看看",
+        "iconPath": "images/tap/kankan.png",
+        "selectedIconPath": "images/tap/kankan_HL.png"
+      },
+        {
+          "pagePath": "pages/caicai/caicai",
+          "text": "踩踩",
+          "iconPath": "images/tap/caicai.png",
+          "selectedIconPath": "images/tap/caicai_HL.png"
+        },
+      {
+          "pagePath": "pages/fenxiang/fenxiang",
+          "text": "分享",
+          "iconPath": "images/tap/xiangxiang.png",
+          "selectedIconPath": "images/tap/xiangxiang_HL.png"
+
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/my_HL.png"
+      }
+    ]
+  }
+  
+}
+

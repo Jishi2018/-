@@ -1,0 +1,152 @@
+/**app.wxss**/
+@import "./style/weui.wxss";
+page{
+  display:flex;
+  flex-direction:column;
+  height:100%;
+}
+
+.ser_container {
+  height: 200px;
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  font-family:'微软雅黑';
+} 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  font-family:'微软雅黑';
+} 
+/* 滚动条 */
+.page-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+/* 提示语 */
+.tips {
+  font-size: 28rpx;
+  text-align: center;
+  padding: 50rpx;
+  color: #ccc;
+  display:none;
+}
+
+.tips image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+
+.tips image,
+.tips text {
+  vertical-align: middle;
+}
+
+/*tip hide*/
+.tip_0,.tip_1,tip_2,tip3{
+    display:block;
+}
+
+.btn-submit{
+	padding: 20rpx;
+  }
+  .group{
+	display: block;
+	width: 100%;
+  }
+.group-header{
+	line-height: 70rpx;
+	display: flex;
+	padding: 0 20rpx;
+	background: #f9f9f9;
+  }
+.group-body{
+	background: #fff;
+	border-top: 1rpx solid #ddd;
+	border-bottom: 1rpx solid #ddd;
+  }
+.group-body .input-list{
+	margin: 0;
+	border: none;
+  }
+.img-upload{
+	padding: 20rpx;
+	font-size: 0;
+	overflow: hidden;
+  }
+.img-upload .img-item,
+.img-upload .img-add{
+	width: 100rpx;
+	height: 100rpx;
+	float: left;
+	margin: 10rpx;
+	border: 1rpx solid transparent;
+  }
+.img-upload .img-add{
+	border: 1rpx dashed #ddd;
+	background: url(../../images/add.png) no-repeat50%50% /70% auto;
+  }
+.img-upload .img-item image{
+	width: 100rpx;
+	height: 100rpx;
+  }
+.img-upload .img-item{
+	position: relative;
+  }
+.img-upload .img-item icon{
+	position: absolute;
+	right: -12rpx;
+	top: -12rpx;
+  }
+  /* 添加二维码布局配置*/
+  .group-header2{
+	line-height: 70rpx;
+	display: flex;
+	padding: 0 20rpx;
+	background: #f9f9f9;
+  }
+.group-body2{
+	background: #fff;
+	border-top: 1rpx solid #ddd;
+	border-bottom: 1rpx solid #ddd;
+  }
+.group-body2 .input-list{
+	margin: 0;
+	border: none;
+  }
+  .img-upload2{
+	padding: 20rpx;
+	font-size: 0;
+	overflow: hidden;
+  }
+.img-upload2 .img-item2,
+.img-upload2 .img-add2{
+	width: 100rpx;
+	height: 100rpx;
+	float: left;
+	margin: 10rpx;
+	border: 1rpx solid transparent;
+  }
+  .img-upload2 .img-add2{
+	border: 1rpx dashed #ddd;
+	background: url(../../images/add.png) no-repeat50%50% /70% auto;
+  }
+.img-upload2 .img-item2 image{
+	width: 100rpx;
+	height: 100rpx;
+  }
+.img-upload2 .img-item2{
+	position: relative;
+  }
+.img-upload2 .img-item2 icon{
+	position: absolute;
+	right: -12rpx;
+	top: -12rpx;
+  }
