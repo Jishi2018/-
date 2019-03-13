@@ -1,0 +1,15 @@
+<!--pages/myAgree/myAgree.wxml-->
+<view class="activity-top" >           
+	<image src="{{active_url}}" mode="scaleToFill"></image>
+</view>
+
+<view class="container">
+<view class="blackboard">
+			<image src="../../images/rank_on.png" mode="aspectFit"></image>
+			<text>公告栏:
+      </text>
+	    <text>{{blackboard}}
+
+      </text>
+  </view> 
+   </view> 

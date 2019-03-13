@@ -1,0 +1,17 @@
+<!--pages/kankan/kankan.wxml-->
+<view class="board">
+  <map id="map" class="map" style="height:{{mapHeight}}; width:{{mapWidth}}" longitude="{{position.longitude}}" latitude="{{position.latitude}}" scale="{{scala}}" markers="{{markers}}" controls="{{controls}}" bindcontroltap="onControltap" bindmarkertap="onMarkerTap" bindtap="onMapTap" hidden="{{mapHidden}}" 
+  show-location="true" />
+ 
+</view>
+
+<!-- 自定义弹框开始 -->
+  <view wx:if="{{showModel}}" class="model">
+   
+    <view class="modelBody">小程序基本功能需要你允许获取昵称信息才能正常使用，请登录授权</view>
+    <view class="btns">
+      <button open-type="getUserInfo" class="agree" bindgetuserinfo="agreeGetUser" lang="zh_CN">微信登录授权</button>
+    </view>
+  </view>
+  <view wx:if="{{showModel}}" class="mask"></view>
+  <!-- 自定义弹框结束 -->

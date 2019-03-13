@@ -1,0 +1,36 @@
+
+   <!-- -->
+    <view class="response_update" >
+    <button> 点击条目查看</button>
+  </view>
+ <!--<scroll-view class="container-body" scroll-y="true" style="height: 600px;" bindscrolltoupper="refresh" lower-threshold="40"     bindscrolltolower="loadmore" bindscroll="scrollHandle" > -->
+	<view class="scroll_view" >
+     <view wx:for="{{works}}" wx:key="keys" > 
+      <view class="b_item" >        
+           <view class="topic-content" bindtap="bindGotoRespond" id="{{index}}">
+           【{{item.ack}}】 {{item.author}} {{item.createdAt}}  {{item.title}}
+          </view>
+          <image class="delete"  src="../../images/delete.png" bindtap="deleteProc" id="{{index}}" ></image>
+        </view>
+        <!-- <image class="delete"  src="../../images/delete.png" bindtap="deleteReq" id="{{index}}" ></image> -->
+
+       </view>
+    </view>
+    
+
+   <!-- 自定义弹框开始 -->
+  <view wx:if="{{showModel}}" class="model">
+   
+    <view class="modelBody">小程序基本功能需要你允许获取昵称信息才能正常使用，请登录授权</view>
+    <view class="btns">
+      <button open-type="getUserInfo" class="agree" bindgetuserinfo="agreeGetUser" lang="zh_CN">微信登录授权</button>
+    </view>
+  </view>
+  <view wx:if="{{showModel}}" class="mask"></view>
+  <!-- 自定义弹框结束 -->
+
+<!--<text style="margin-left: 25rpx; margin-top: 35rpx" > 温馨提示：【】有数字表明其它用户响应了你，可以点击条目查看</text>->
+
+
+
+ 

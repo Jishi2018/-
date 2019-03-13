@@ -1,0 +1,26 @@
+<!--pages/kankan/kankan.wxml-->
+  <view class="board">
+  <map id="map" class="map" style="height:{{mapHeight}}; width:{{mapWidth}}" longitude="{{position.longitude}}" latitude="{{position.latitude}}" scale="{{scala}}" markers="{{markers}}" controls="{{controls}}" bindmarkertap="onMarkerTap" bindtap="onMapTap" hidden="{{mapHidden}}" 
+  show-location="true" />
+ </view>
+
+<view class="container">
+		<view class="group">
+			<view class="group-body">
+      <view class="group-header">简单描述</view>
+				<textarea bindblur="bindTextAreaBlur" placeholder="请在上面地图选择位置再描述拍摄需求，比如请拍摄东方明珠塔顶俯瞰风景" value="{{commit_info}}" maxlength="1000"></textarea>
+			</view>
+			  <view class="btn-submit">
+			<button class="btn-block btn-orange" bindtap="onConfirmCollectTap">确认提交</button>
+		  </view>
+		 
+    </view>
+
+   
+	
+</view>
+
+
+
+
+  

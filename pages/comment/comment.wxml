@@ -1,0 +1,5 @@
+<!--pages/comment/comment.wxml-->
+ <view class="WxComment">
+  <WxComment tipOne="有您的点评才精彩！ " tipTwo="Thanks for yicm." submitBtnText="回复" articleID="{{article_id}}" proc_mode="{{proc_mode}}"  contentLen='1' theme="light"></WxComment>
+</view>
+

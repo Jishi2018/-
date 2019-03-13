@@ -1,0 +1,28 @@
+<!--pages/appSYS/appSYS.wxml-->
+<view class="container">
+<view class="blackboard">
+			<image src="../../images/rank_on.png" mode="aspectFit"></image>
+			<text>公告栏:
+       现在社会倡导共享经济，如果您提供的场景服务满足了其它用户的诉求，就可以获得其它用户的回报！同样，如果其它用户提供的场景服务满足了您的诉求，自然您也有回报的期望!
+
+      【】其它用户给您奖励：您可以在“我的奖励”上传您的微信收款二维码。需要说明的是，有赏服务需要您允许获取用户信息权限，其它用户才可以正常转账。需要强调的是，期间如果您更改了您的微信昵称，请在更改生效后，再次上传下您的微信收款二维码，否则其它用户无法对您的服务进行支付。上传您的微信收款二维码后，您就可以在“踩踩”页面多多地去踩标记响应，您的响应如果得到别人的认可，也许对方就会回报您！
+
+      【】您奖励给其它用户：具体就是在其它用户给您提供场景图片的页面，点击图片旁边亮色 ¥ 图案，就可以打开对方用户的微信收款二维码，长按进行收藏。而具体付款操作就是通过微信底部导航“我”打开"收藏"里面的对方用户微信收款二维码，长按后操作识别二维码就能基于微信支付可以付款了。付款时，请在微信支付备注里面说明，也方便结识朋友！
+
+      </text>
+      <view class="group-header2">请点击下方框上传一张您的微信收款二维码</view>
+			<view class="group-body2">
+				<view class="img-upload2">
+					<view class="img-add2" bindtap="choose2Image"></view>
+					<view class="img-item2 " bindlongpress="edit2Image" wx:for="{{upload2imgs}}" >
+						<icon type="clear" size="20" color="red" style="display:{{editable?'block':'none'}}" bindtap="delete2Img" />
+						<image src="{{item}}" mode="aspectFill"></image>
+					</view>
+				</view>
+			</view>
+		  <view class="btn-submit">
+			<button class="btn-block btn-orange" bindtap="respondSubmit">确认提交</button>
+		  </view>
+  </view> 
+   </view> 
+ 

@@ -1,0 +1,33 @@
+<!--pages/k_servcie_img/k_servcie_img.wxml-->
+
+  <view class="board">
+  <map id="map" class="map" style="height:{{mapHeight}}; width:{{mapWidth}}" longitude="{{position.longitude}}" latitude="{{position.latitude}}" scale="{{scala}}" markers="{{markers}}" controls="{{controls}}" bindmarkertap="onMarkerTap" bindtap="onMapTap" hidden="{{mapHidden}}" 
+  show-location="true" />
+ </view>
+<view class="container">
+	<!--<view class="container-body container-gray" style="display:{{showfootertab==0?'block':'none'}}"> -->
+		<view class="group">
+			<view class="group-header">简单描述</view>
+			<view class="group-body">
+				<textarea bindblur="bindTextAreaBlur" placeholder="请对发布图片描述，可输入150字" value="{{commit_info}}" maxlength="1000"></textarea>
+			</view>
+			<view class="group-header">上传图片</view>
+			<view class="group-body">
+				<view class="img-upload"> 
+					<view class="img-add" bindtap="chooseImage"></view>
+					<view class="img-item" bindlongpress="editImage" wx:for="{{uploadimgs}}" wx:key="{{index}}">
+						<icon type="clear" size="20" color="red" style="display:{{editable?'block':'none'}}" bindtap="deleteImg" data-index="{{index}}"/>
+						<image src="{{item}}" mode="aspectFill"></image>
+					</view>
+				</view>
+			</view>
+		  <view class="btn-submit">
+			<button class="btn-block btn-orange" bindtap="onConfirmCollectTap">确认提交</button>
+		  </view>
+    </view>
+	<!--</view> -->
+</view>
+
+
+  
+

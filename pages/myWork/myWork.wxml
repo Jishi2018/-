@@ -1,0 +1,25 @@
+
+   <!-- -->   
+    <view class="response_update" >
+    <button> 我的予人玫瑰</button>
+  </view>
+ <!--<scroll-view class="container-body" scroll-y="true" style="height: 600px;" bindscrolltoupper="refresh" lower-threshold="40"     bindscrolltolower="loadmore" bindscroll="scrollHandle" > -->
+	<view class="scroll_view" >
+     <view wx:for="{{works}}" wx:key="keys" > 
+     
+      <view class="b_item" >        
+        
+           <view class="topic-content"  >
+           【{{item.reqid}}】 {{item.createdAt}}  {{item.title}}
+          </view>
+          <image class="delete"  src="../../images/delete.png" bindtap="deleteProc" id="{{index}}" ></image>
+        </view>
+       
+       </view>
+    </view>
+    
+
+
+
+
+

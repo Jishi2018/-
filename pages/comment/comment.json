@@ -1,0 +1,8 @@
+{
+  "enablePullDownRefresh": false,
+  "disableScroll": false,
+  "component": true,
+  "usingComponents": {
+    "WxComment": "/component/WxComment/WxComment"
+  }
+}
