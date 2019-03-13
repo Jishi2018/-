@@ -14,8 +14,18 @@
 该小程序后台用leancloud,，可以直接在其官网查看leancloud 在微信小程序的应用 。（https://leancloud.cn/docs/index.html）
 整个小程序主要有三个功能页面： 看看、踩踩、分享。
 "看看"主要是查看个人提交拍摄需求是否响应；"踩踩"主要是基于你当前位置响应别人提交的拍摄需求；“分享”是分享有趣的图片和视频。
-因为已经上线了一个初级版本，在小程序“我的”使用说明有详细介绍，这里就不详细介绍，可以微信搜索小程序“极视科技”进入。
+因为已经上线了一个初级版本，在小程序“我的”使用说明有详细介绍，这里就不详细介绍，可以微信搜索小程序“极视科技”进入或者扫描下面二维码。
   
+![二维码](https://github.com/Jishi2018/-/blob/master/res/%E6%9E%81%E8%A7%86%E7%A7%91%E6%8A%80%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg)
+
+>“看看”功能
+![二维码](https://github.com/Jishi2018/-/blob/master/res/%E7%9C%8B%E7%9C%8B.jpg)
+
+>“踩踩”功能
+![二维码](https://github.com/Jishi2018/-/blob/master/res/%E8%B8%A9%E8%B8%A9.jpg)
+
+>“分享”功能
+![二维码](https://github.com/Jishi2018/-/blob/master/res/%E5%88%86%E4%BA%AB.jpg)
 
 <> 问题：
 开发这个小程序，也遇到很多坑，最多就是异步机制。另外还有map 多个控件在不同机器的位置问题。 
