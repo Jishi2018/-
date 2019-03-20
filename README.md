@@ -67,7 +67,7 @@
 <> 众筹：
 该小程序如果对你有所帮助，或者你对该小程序的创意想法比较感兴趣，也愿意贡献你的一份力量，欢迎众筹的方式支持，谢谢！
 
-![二维码](https://github.com/Jishi2018/-/blob/master/res/%E4%BC%97%E7%AD%B9.jpg)
+![二维码](https://github.com/Jishi2018/-/blob/master/res/%E4%BC%97%E7%AD%B9.JPG)
 
 
 
